@@ -80,7 +80,11 @@ Como o exemplo a abaixo:
 ## Agradecimentos
 	
 	Obrigado por lerem até o final espero que não tenham problemas em rodar  o aplicativo,  agradeço a oportunidade de realizar estes  testes, foi um bom aprendizado.
+	Utilizei o curso de Angular fornecido pela a Loiane Groner, agradeço pelo ensinamento que foi muito legal, utilizei alguns conceitos e pequenos trechos de códigos 
+	na aplicação, e para quem estiver interessado esté o link do curso pelo o youtube: https://www.youtube.com/watch?v=tPOMG0D57S0
+	
 	Meu primeiro aplicativo em Angular espero que gostem.
+	
 
 
 
