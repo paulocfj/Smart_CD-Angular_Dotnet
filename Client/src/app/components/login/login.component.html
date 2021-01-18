@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="card box">
+      <div class="card-body">
+        <div class="card-header text-center bg-darken-0"><h3>
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-vinyl" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path d="M8 6a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM4 8a4 4 0 1 1 8 0 4 4 0 0 1-8 0z"/>
+            <path d="M9 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+          </svg> Smart CD</h3></div>
+          <div class="col-md-12 mt-2">
+            <label for="inputUsername" class="form-label">Usuário:  </label>
+            <input type="text" class="form-control" id="inputUsername" placeholder="Nome do usuário" [(ngModel)]="login.username">
+          </div>
+          <div class="col-md-12 mt-2">
+            <label for="inputPassword" class="form-label">Senha:  </label>
+            <input type="password" class="form-control" id="inputPassword" placeholder="*******" [(ngModel)]="login.password">
+          </div>
+          <div class="col-md-12 mt-4">
+            <button (click)="loginAcess()" class="btn btn-primary button">Entrar</button>
+          </div>
+        </div>
+      </div>
+  </div>

@@ -1,0 +1,14 @@
+.button {
+    border-radius: 1em;
+    width: 100px;
+    height: 40px;
+}
+
+body {
+    margin: 0px;
+}
+
+.box{
+    width: 50rem;
+}
+    

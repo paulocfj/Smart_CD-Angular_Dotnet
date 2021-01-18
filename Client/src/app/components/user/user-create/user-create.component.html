@@ -1,0 +1,50 @@
+<div class="container box">
+    <form #f="ngForm" (ngSubmit)="createUser(f)">
+        <div class="card mt-5">
+            <div class="card-body">
+                <div class="card-header text-center bg-darken-0"><h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                      </svg> Cadastro de Usuário</h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 mt-2">
+                        <label for="inputName" class="form-label">Nome:  </label>
+                        <input type="text" class="form-control" id="inputName" placeholder="Nome....."  name="name" ngModel required>
+                      </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 mt-2">
+                        <label for="inputUsername" class="form-label">Usuário:  </label>
+                        <input type="text" class="form-control" id="inputUsername" placeholder="Nome do usuário" name="username" ngModel required>
+                      </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 mt-2">
+                        <label for="inputPassword" class="form-label">Senha:  </label>
+                        <input type="password" class="form-control" id="inputPassword" placeholder="*******" name="password" ngModel required>
+                      </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 mt-2">
+                        <label for="inputConfirmPassword" class="form-label">Confirmar Senha:  </label>
+                        <input type="password" class="form-control" id="inputConfirmPassword" placeholder="*******" name="confirmPassword" ngModel required>
+                    </div>
+                </div>    
+                
+                </div>
+            </div>
+            <div class="row justify-content-lg-between">
+                <div class="col-md-6 mt-4">
+                    <button type="submit" class="btn btn-secondary button" >Cadastrar</button>
+                 </div>
+                    
+                <div class="col-md-6 mt-4">
+                    <button (click)="cancel()" class="btn btn-danger button">Cancelar</button>
+                </div>
+            </div>
+    </form>
+   
+    </div>
+

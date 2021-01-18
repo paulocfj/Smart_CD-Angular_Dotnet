@@ -1,0 +1,74 @@
+<div class="container mt-5 box">
+    
+        <div class="card">
+            <div class="card-body">
+                <form  [formGroup]="formulario" (ngSubmit)="onSubmit()">
+                    <div class="card-header text-center bg-darken-0"><h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-vinyl" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M8 6a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM4 8a4 4 0 1 1 8 0 4 4 0 0 1-8 0z"/>
+                            <path d="M9 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                          </svg> Cadastro de CDs</h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 mt-2">
+                        <label for="inputName" class="form-label">Nome:  </label>
+                        <input type="text" class="form-control" id="inputName" placeholder="Nome....."  formControlName="name" >
+                        <app-campo-control-erro 
+                        [mostrarErro]="verificaValidTouched('name')" 
+                        msgErro="Nome é obrigatório.">
+                      </app-campo-control-erro>
+                      </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 mt-2">
+                        <label for="inputArtist" class="form-label">Artista:  </label>
+                        <input type="text" class="form-control" id="inputArtist" placeholder="Nome do artista, da banda, do grupo...." formControlName="artist">
+                        <app-campo-control-erro 
+                          [mostrarErro]="verificaValidTouched('artist')" 
+                          msgErro="Artista é obrigatório.">
+                        </app-campo-control-erro>
+                      </div>
+                      
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="inputGenre" class="form-label">Genêro:  </label>
+                        <input type="text" class="form-control" id="inpuGenre" placeholder="Genêro musical...." formControlName="genre">
+                        <app-campo-control-erro 
+                          [mostrarErro]="verificaValidTouched('genre')" 
+                          msgErro="Genêro é obrigatório.">
+                        </app-campo-control-erro>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputYear" class="form-label">Ano de lançamento:  </label>
+                        <input type="number" class="form-control" id="inputGenre" placeholder="2018...." formControlName="year">
+                        <app-campo-control-erro 
+                          [mostrarErro]="verificaValidTouched('year')" 
+                          msgErro="Ano é obrigatório.">
+                        </app-campo-control-erro>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputDuration" class="form-label">Duration:  </label>
+                        <input type="number" class="form-control" id="inputDuration" placeholder="60...." formControlName="duration">
+                        <app-campo-control-erro 
+                          [mostrarErro]="verificaValidTouched('duration')" 
+                          msgErro="Duração do cd é obrigatório.">
+                        </app-campo-control-erro>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-2">
+                        <button  class="btn btn-secondary" type="submit" [disabled]="!formulario.valid">Salvar</button>
+                    </div>
+                    <div class="col-2">
+                        <button class="btn btn-danger" (click)="cancel()">Cancelar</button>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+        
+</div>
